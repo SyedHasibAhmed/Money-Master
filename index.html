@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money-Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <h1 class="text-center text-5xl font-bold text-orange-400 mt-3"> <span class="text-orange-500"> $</span> Money
+        Moster <span class="text-orange-500"> $</span>
+    </h1>
+
+    <section class="grid grid-cols-2 mt-5 ">
+
+        <div class="h-full">
+            <img src="images/800px_COLOURBOX34905260.jpg" alt="">
+        </div>
+
+        <div class="bg-slate-300 mx-5 pt-3 mb-3 text-center  block h-full">
+            <h4 class="mb-2">Income</h4>
+            <p class="mb-2">Income: <input id="income-input" class="rounded px-2" type="text"> </p>
+            <h4>Expenses</h4>
+            <p class="mt-2"> Food: <input id="food-input" class="rounded px-2" type="text"> </p>
+            <p class="mt-2"> Rent: <input id="rent-input" class="rounded px-2" type="text"> </p>
+            <p class="mt-2 ">clothes: <input id="clothes-input" class="rounded px-2" type="text"> </p>
+            <button id="btn-calculate" class="bg-sky-400 mt-3 px-2 py-1 rounded">Calculate</button>
+            <h4 class="mt-2">Total Expenses :<span id="total-expenses-input">0000</span></h4>
+            <h4 class="mt-2 mb-2">Balance :<span id="new-balance">0000</span></h4>
+
+            <p class="mt-2 mb-4"><strong>Save :</strong> <span class="bg-slate-100 px-4 py-1">20</span> <span>%</span>
+                <button id="btn-saving" class="bg-sky-400 px-3 py-1 rounded">Save</button>
+            </p>
+
+
+            <p> <strong>Saving Amount :</strong> <span id="saving-amount">0000</span></p>
+            <p class="mb-2"><strong>Remaining balance :</strong><span id="remaining-balance">0000</span></p>
+
+
+        </div>
+
+    </section>
+
+    <script src="js/common.js"></script>
+    <script src="js/balance.js"></script>
+    <script src="js/saving.js"></script>
+</body>
+
+</html>
